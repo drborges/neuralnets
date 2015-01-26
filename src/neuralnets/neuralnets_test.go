@@ -25,3 +25,8 @@ func TestXorPerceptron(t *testing.T) {
 	assert.Equal(t, 1, XorPerceptron(0, 1))
 	assert.Equal(t, 0, XorPerceptron(0, 0))
 }
+
+func TestNotPerceptron(t *testing.T) {
+	assert.Equal(t, 0, NotPerceptron(1))
+	assert.Equal(t, 1, NotPerceptron(0))
+}

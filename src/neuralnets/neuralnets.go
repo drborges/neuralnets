@@ -28,3 +28,7 @@ func XorPerceptron(x1, x2 float64) int {
 	and := float64(AndPerceptron(x1, x2))
 	return Perceptron([]float64{x1, x2, and}, []float64{1, 1, -2}, activation)
 }
+
+func NotPerceptron(x1 float64) int {
+	return XorPerceptron(x1, 1)
+}
