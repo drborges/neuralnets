@@ -33,8 +33,15 @@ func TestNotPerceptron(t *testing.T) {
 }
 
 func TestNandPerceptron(t *testing.T) {
-	assert.Equal(t, 1, perceptrons.Nand(0, 0))
-	assert.Equal(t, 1, perceptrons.Nand(0, 1))
-	assert.Equal(t, 1, perceptrons.Nand(1, 0))
 	assert.Equal(t, 0, perceptrons.Nand(1, 1))
+	assert.Equal(t, 1, perceptrons.Nand(1, 0))
+	assert.Equal(t, 1, perceptrons.Nand(0, 1))
+	assert.Equal(t, 1, perceptrons.Nand(0, 0))
+}
+
+func TestNorPerceptron(t *testing.T) {
+	assert.Equal(t, 0, perceptrons.Nor(1, 1))
+	assert.Equal(t, 0, perceptrons.Nor(1, 0))
+	assert.Equal(t, 0, perceptrons.Nor(0, 1))
+	assert.Equal(t, 1, perceptrons.Nor(0, 0))
 }

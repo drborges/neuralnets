@@ -36,3 +36,7 @@ func Not(x1 int) int {
 func Nand(x1, x2 int) int {
 	return Not(And(x1, x2))
 }
+
+func Nor(x1, x2 int) int {
+	return Not(Or(x1, x2))
+}
