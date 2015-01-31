@@ -31,3 +31,10 @@ func TestNotPerceptron(t *testing.T) {
 	assert.Equal(t, 0, perceptrons.Not(1))
 	assert.Equal(t, 1, perceptrons.Not(0))
 }
+
+func TestNandPerceptron(t *testing.T) {
+	assert.Equal(t, 1, perceptrons.Nand(0, 0))
+	assert.Equal(t, 1, perceptrons.Nand(0, 1))
+	assert.Equal(t, 1, perceptrons.Nand(1, 0))
+	assert.Equal(t, 0, perceptrons.Nand(1, 1))
+}
