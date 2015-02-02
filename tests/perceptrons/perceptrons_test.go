@@ -45,3 +45,10 @@ func TestNorPerceptron(t *testing.T) {
 	assert.Equal(t, 0, perceptrons.Nor(0, 1))
 	assert.Equal(t, 1, perceptrons.Nor(0, 0))
 }
+
+func TestXnorPerceptron(t *testing.T) {
+	assert.Equal(t, 1, perceptrons.Xnor(1, 1))
+	assert.Equal(t, 0, perceptrons.Xnor(1, 0))
+	assert.Equal(t, 0, perceptrons.Xnor(0, 1))
+	assert.Equal(t, 1, perceptrons.Xnor(0, 0))
+}

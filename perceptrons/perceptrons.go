@@ -40,3 +40,7 @@ func Nand(x1, x2 int) int {
 func Nor(x1, x2 int) int {
 	return Not(Or(x1, x2))
 }
+
+func Xnor(x1, x2 int) int {
+	return Not(Xor(x1, x2))
+}
